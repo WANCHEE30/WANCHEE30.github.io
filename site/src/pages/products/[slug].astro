@@ -1,0 +1,67 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { products } from '../../data/products.js';
+
+export function getStaticPaths() {
+  return products.map((p) => ({ params: { slug: p.slug }, props: { product: p } }));
+}
+
+const { product } = Astro.props;
+const related = products.filter((p) => p.slug !== product.slug && p.tag === product.tag);
+---
+<BaseLayout
+  title={`${product.name} — ${product.tag}｜萬記貿易`}
+  description={product.desc}
+>
+  <section class="section product-detail" style="padding-top:48px">
+    <div class="wrap">
+      <div>
+        <div class={`visual ${product.topClass}`}>
+          <img src={product.img} alt={product.imgAlt} />
+        </div>
+      </div>
+      <div>
+        <p class="crumbs"><a href="/products">產品系列</a> ／ {product.tag}</p>
+        <span class={`tag ${product.tagClass}`}>{product.tag}</span>
+        <h1>{product.name}</h1>
+
+        <div class="block">
+          <h2>產品介紹</h2>
+          <p>{product.intro}</p>
+        </div>
+
+        <div class="block">
+          <h2>建議用途</h2>
+          <p>{product.uses}</p>
+        </div>
+
+        <div class="detail-cta">
+          <a href="/contact" class="btn btn-light" style="background:var(--red);color:#fff">詢價洽詢</a>
+          <a href="/products" class="btn btn-ghost" style="border-color:var(--line);color:var(--ink)">← 回產品列表</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {related.length > 0 && (
+    <section class="products" style="padding-top:0">
+      <div class="wrap">
+        <span class="eyebrow">SAME SERIES</span>
+        <h2 class="title">同系列產品</h2>
+        <div class="grid">
+          {related.map((p) => (
+            <a class="card" href={`/products/${p.slug}`}>
+              <div class={`card-top ${p.topClass}`}><img src={p.img} alt={p.imgAlt} loading="lazy" /></div>
+              <div class="card-body">
+                <span class={`tag ${p.tagClass}`}>{p.tag}</span>
+                <h3>{p.name}</h3>
+                <p>{p.desc}</p>
+                <span class="card-more">查看詳情 →</span>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</BaseLayout>

@@ -1,0 +1,29 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import { products } from '../data/products.js';
+---
+<BaseLayout title="產品系列 — 萬記貿易有限公司" description="牛老大奶粉、特級去礦乳清粉、月光牌無鋁泡打粉、白美娜濃縮鮮乳，供烘焙與食品加工專業選用。">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="hero-badge">OUR PRODUCTS</span>
+      <h1>產品系列</h1>
+      <p>奶粉、乳清、泡打粉與濃縮鮮乳，供烘焙、飲品與食品加工專業選用。</p>
+    </div>
+  </section>
+
+  <section class="products">
+    <div class="wrap">
+      <div class="grid" style="margin-top:0">
+        {products.map((p) => <ProductCard {...p} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2 class="title">需要報價或樣品？</h2>
+      <a href="/contact" class="btn btn-light" style="background:var(--red);color:#fff">聯絡業務洽詢</a>
+    </div>
+  </section>
+</BaseLayout>

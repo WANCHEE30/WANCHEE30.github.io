@@ -1,0 +1,28 @@
+---
+const { name, address, phone, delivery, store, website } = Astro.props;
+const telHref = phone ? 'tel:' + phone.replace(/[^0-9+]/g, '') : null;
+const search = [name, address, phone].filter(Boolean).join(' ').toLowerCase();
+---
+<div class="dealer-card" data-search={search}>
+  <div class="dealer-head">
+    {website ? (
+      <a class="dealer-name is-link" href={website} target="_blank" rel="noopener" title={`前往 ${name} 官方網站`}>
+        <span>{name}</span>
+        <svg class="ext-icon" viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+          <polyline points="15 3 21 3 21 9" />
+          <line x1="10" y1="14" x2="21" y2="3" />
+        </svg>
+      </a>
+    ) : (
+      <span class="dealer-name">{name}</span>
+    )}
+    <div class="dealer-badges">
+      {delivery && <span class="badge b-delivery">配送</span>}
+      {store && <span class="badge b-store">門市</span>}
+      {website && <span class="badge b-web">官網</span>}
+    </div>
+  </div>
+  {address && <p class="dealer-addr">{address}</p>}
+  {phone && <a class="dealer-phone" href={telHref}>☎ {phone}</a>}
+</div>

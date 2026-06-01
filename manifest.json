@@ -1,0 +1,702 @@
+[
+  {
+    "path": "/",
+    "bytes": 1979,
+    "type": "text/html"
+  },
+  {
+    "path": "/layout.css",
+    "bytes": 1635,
+    "type": "text/css"
+  },
+  {
+    "path": "/jquery-1.2.6.min.js",
+    "bytes": 55805,
+    "type": "application/javascript"
+  },
+  {
+    "path": "/js/js.js",
+    "bytes": 2208,
+    "type": "application/javascript"
+  },
+  {
+    "path": "/if_header.html",
+    "bytes": 4901,
+    "type": "text/html"
+  },
+  {
+    "path": "/banner04.png",
+    "bytes": 70363,
+    "type": "image/png"
+  },
+  {
+    "path": "/banner01.png",
+    "bytes": 497159,
+    "type": "image/png"
+  },
+  {
+    "path": "/banner03.png",
+    "bytes": 644776,
+    "type": "image/png"
+  },
+  {
+    "path": "/if_menu_nav.html",
+    "bytes": 3599,
+    "type": "text/html"
+  },
+  {
+    "path": "/if_menu_info.html",
+    "bytes": 2224,
+    "type": "text/html"
+  },
+  {
+    "path": "/if_pro_navs.html",
+    "bytes": 3205,
+    "type": "text/html"
+  },
+  {
+    "path": "/contactus.htm",
+    "bytes": 1724,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/titlebar/spacer.gif",
+    "bytes": 43,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r1_c1_s1.gif",
+    "bytes": 5338,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r2_c1_s1.gif",
+    "bytes": 596,
+    "type": "image/gif"
+  },
+  {
+    "path": "/products.htm",
+    "bytes": 1533,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r2_c2_s1.gif",
+    "bytes": 944,
+    "type": "image/gif"
+  },
+  {
+    "path": "/about.htm",
+    "bytes": 6811,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r2_c3_s1.gif",
+    "bytes": 944,
+    "type": "image/gif"
+  },
+  {
+    "path": "/news.htm",
+    "bytes": 3503,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r2_c4_s1.gif",
+    "bytes": 909,
+    "type": "image/gif"
+  },
+  {
+    "path": "/company.htm",
+    "bytes": 14591,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r2_c5_s1.gif",
+    "bytes": 1046,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r2_c6_s1.gif",
+    "bytes": 1046,
+    "type": "image/gif"
+  },
+  {
+    "path": "/recommendations.htm",
+    "bytes": 2750,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r2_c7_s1.gif",
+    "bytes": 1253,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r2_c8_s1.gif",
+    "bytes": 582,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/titlebar/titlebar_r3_c2_s1.gif",
+    "bytes": 70,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/menu/menu_r1_c1_s1.gif",
+    "bytes": 574,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/menu/menu_r2_c1_s1.gif",
+    "bytes": 1508,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/menu/menu_r2_c2_s1.gif",
+    "bytes": 497,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/menu/menu_r3_c1_s1.gif",
+    "bytes": 1127,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/menu/menu_r4_c1_s1.gif",
+    "bytes": 1102,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/menu/menu_r5_c1_s1.gif",
+    "bytes": 1205,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/menu/menu_r6_c1_s1.gif",
+    "bytes": 1220,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/menu/menu_r7_c1_s1.gif",
+    "bytes": 1531,
+    "type": "image/gif"
+  },
+  {
+    "path": "/spacer.gif",
+    "bytes": 43,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/main_nav/main2_r1_c1_s1.gif",
+    "bytes": 4156,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/main_nav/main2_r2_c1_s1.gif",
+    "bytes": 316,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/main_nav/main2_r2_c2_s1.gif",
+    "bytes": 560,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/main_nav/main2_r2_c3_s1.gif",
+    "bytes": 224,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/main_nav/main2_r3_c2_s1.gif",
+    "bytes": 145,
+    "type": "image/gif"
+  },
+  {
+    "path": "/product_01.htm",
+    "bytes": 4110,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/pro_nav/products_r1_c1_s1.gif",
+    "bytes": 15212,
+    "type": "image/gif"
+  },
+  {
+    "path": "/product_02.htm",
+    "bytes": 4113,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/pro_nav/products_r1_c2_s1.gif",
+    "bytes": 13095,
+    "type": "image/gif"
+  },
+  {
+    "path": "/product_03.htm",
+    "bytes": 4161,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/pro_nav/products_r2_c1_s1.gif",
+    "bytes": 16633,
+    "type": "image/gif"
+  },
+  {
+    "path": "/product_04.htm",
+    "bytes": 2158,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/pro_nav/products_r2_c2_s1.gif",
+    "bytes": 12067,
+    "type": "image/gif"
+  },
+  {
+    "path": "/product_05.htm",
+    "bytes": 3428,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/pro_nav/products_r3_c1_s1.gif",
+    "bytes": 20480,
+    "type": "image/gif"
+  },
+  {
+    "path": "/product_06.htm",
+    "bytes": 3763,
+    "type": "text/html"
+  },
+  {
+    "path": "/images/pro_nav/products_r3_c2_s1.gif",
+    "bytes": 18258,
+    "type": "image/gif"
+  },
+  {
+    "path": "/bk.png",
+    "bytes": 255363,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/newsbar.png",
+    "bytes": 8340,
+    "type": "image/png"
+  },
+  {
+    "path": "/news/120504_01/120504_01.html",
+    "bytes": 2368,
+    "type": "text/html"
+  },
+  {
+    "path": "/news/120504_01/P39_t.jpg",
+    "bytes": 33978,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/news/120504_02/120504_02.htm",
+    "bytes": 2167,
+    "type": "text/html"
+  },
+  {
+    "path": "/news/120504_02/P54_t.jpg",
+    "bytes": 34641,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/dup.jpg",
+    "bytes": 83681,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/company02.htm",
+    "bytes": 6758,
+    "type": "text/html"
+  },
+  {
+    "path": "/company03.htm",
+    "bytes": 7603,
+    "type": "text/html"
+  },
+  {
+    "path": "/company04.htm",
+    "bytes": 7987,
+    "type": "text/html"
+  },
+  {
+    "path": "/company05.htm",
+    "bytes": 14195,
+    "type": "text/html"
+  },
+  {
+    "path": "/f1up.png",
+    "bytes": 115911,
+    "type": "image/png"
+  },
+  {
+    "path": "/f1.htm",
+    "bytes": 10695,
+    "type": "text/html"
+  },
+  {
+    "path": "/f2up_r1_c1_s1.jpg",
+    "bytes": 67093,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/f2.htm",
+    "bytes": 12095,
+    "type": "text/html"
+  },
+  {
+    "path": "/f2up_r1_c2_s1.jpg",
+    "bytes": 82768,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/if_pro_left_menu.html",
+    "bytes": 4289,
+    "type": "text/html"
+  },
+  {
+    "path": "/a1up.png",
+    "bytes": 115632,
+    "type": "image/png"
+  },
+  {
+    "path": "/MO.png",
+    "bytes": 10210,
+    "type": "image/png"
+  },
+  {
+    "path": "/a2up.png",
+    "bytes": 117827,
+    "type": "image/png"
+  },
+  {
+    "path": "/a3up.png",
+    "bytes": 117088,
+    "type": "image/png"
+  },
+  {
+    "path": "/baking-02.png",
+    "bytes": 30506,
+    "type": "image/png"
+  },
+  {
+    "path": "/baking.png",
+    "bytes": 24909,
+    "type": "image/png"
+  },
+  {
+    "path": "/a4up.png",
+    "bytes": 118065,
+    "type": "image/png"
+  },
+  {
+    "path": "/pamina.png",
+    "bytes": 29104,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/logo.jpg",
+    "bytes": 18277,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/images/sgs/b1.png",
+    "bytes": 258889,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b1_t.png",
+    "bytes": 30820,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b2.png",
+    "bytes": 245760,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b2_t.png",
+    "bytes": 30299,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b3.png",
+    "bytes": 301028,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b3_t.png",
+    "bytes": 30393,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b4.png",
+    "bytes": 289664,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b4_t.png",
+    "bytes": 29249,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b5.png",
+    "bytes": 290896,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b5_t.png",
+    "bytes": 29190,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b6.png",
+    "bytes": 288639,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b6_t.png",
+    "bytes": 28848,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b7.png",
+    "bytes": 298538,
+    "type": "image/png"
+  },
+  {
+    "path": "/images/sgs/b7_t.png",
+    "bytes": 28629,
+    "type": "image/png"
+  },
+  {
+    "path": "/news/120504_01/P39.jpg",
+    "bytes": 368154,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/news/120504_01/P40.jpg",
+    "bytes": 189400,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/news/120504_01/P41.jpg",
+    "bytes": 220744,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/news/120504_02/P54.jpg",
+    "bytes": 422864,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/news/120504_02/P55.jpg",
+    "bytes": 130244,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/news/120504_02/P56.jpg",
+    "bytes": 200918,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/news/120504_02/P57.jpg",
+    "bytes": 184435,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/news/120504_02/P58.jpg",
+    "bytes": 181729,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/news/120504_02/P59.jpg",
+    "bytes": 206167,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/titlebar/spacer.gif",
+    "bytes": 43,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r1_c1_s1.gif",
+    "bytes": 5338,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r2_c1_s1.gif",
+    "bytes": 596,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r2_c2_s1.gif",
+    "bytes": 944,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r2_c3_s1.gif",
+    "bytes": 944,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r2_c4_s1.gif",
+    "bytes": 909,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r2_c5_s1.gif",
+    "bytes": 1046,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r2_c6_s1.gif",
+    "bytes": 1046,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r2_c7_s1.gif",
+    "bytes": 1253,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r2_c8_s1.gif",
+    "bytes": 582,
+    "type": "image/gif"
+  },
+  {
+    "path": "/titlebar/titlebar_r3_c2_s1.gif",
+    "bytes": 70,
+    "type": "image/gif"
+  },
+  {
+    "path": "/menu/spacer.gif",
+    "bytes": 43,
+    "type": "image/gif"
+  },
+  {
+    "path": "/menu/menu_r1_c1_s1.gif",
+    "bytes": 574,
+    "type": "image/gif"
+  },
+  {
+    "path": "/menu/menu_r2_c1_s1.gif",
+    "bytes": 1508,
+    "type": "image/gif"
+  },
+  {
+    "path": "/menu/menu_r2_c2_s1.gif",
+    "bytes": 497,
+    "type": "image/gif"
+  },
+  {
+    "path": "/menu/menu_r3_c1_s1.gif",
+    "bytes": 1127,
+    "type": "image/gif"
+  },
+  {
+    "path": "/menu/menu_r4_c1_s1.gif",
+    "bytes": 1102,
+    "type": "image/gif"
+  },
+  {
+    "path": "/menu/menu_r5_c1_s1.gif",
+    "bytes": 1205,
+    "type": "image/gif"
+  },
+  {
+    "path": "/menu/menu_r6_c1_s1.gif",
+    "bytes": 1220,
+    "type": "image/gif"
+  },
+  {
+    "path": "/menu/menu_r7_c1_s1.gif",
+    "bytes": 1531,
+    "type": "image/gif"
+  },
+  {
+    "path": "/main2.png",
+    "bytes": 11681,
+    "type": "image/png"
+  },
+  {
+    "path": "/main2_r1_c1_s1.gif",
+    "bytes": 4156,
+    "type": "image/gif"
+  },
+  {
+    "path": "/main2_r2_c1_s1.gif",
+    "bytes": 316,
+    "type": "image/gif"
+  },
+  {
+    "path": "/main2_r2_c2_s1.gif",
+    "bytes": 560,
+    "type": "image/gif"
+  },
+  {
+    "path": "/main2_r2_c3_s1.gif",
+    "bytes": 224,
+    "type": "image/gif"
+  },
+  {
+    "path": "/main2_r3_c2_s1.gif",
+    "bytes": 145,
+    "type": "image/gif"
+  },
+  {
+    "path": "/f1-up.jpg",
+    "bytes": 81652,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/f2-up.jpg",
+    "bytes": 98298,
+    "type": "image/jpeg"
+  },
+  {
+    "path": "/images/pro_left_menu/spacer.gif",
+    "bytes": 43,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/pro_left_menu/menu2_r1_c1_s1.gif",
+    "bytes": 574,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/pro_left_menu/menu2_r2_c1_s1.gif",
+    "bytes": 2111,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/pro_left_menu/menu2_r2_c2_s1.gif",
+    "bytes": 497,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/pro_left_menu/menu2_r3_c1_s1.gif",
+    "bytes": 1559,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/pro_left_menu/menu2_r4_c1_s1.gif",
+    "bytes": 1891,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/pro_left_menu/menu2_r5_c1_s1.gif",
+    "bytes": 1773,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/pro_left_menu/menu2_r6_c1_s1.gif",
+    "bytes": 1591,
+    "type": "image/gif"
+  },
+  {
+    "path": "/images/pro_left_menu/menu2_r7_c1_s1.gif",
+    "bytes": 1701,
+    "type": "image/gif"
+  }
+]

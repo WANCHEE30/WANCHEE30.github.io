@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const timeline = [
+  { year: '1960', text: '老董事長李曼英先生正式成立萬記貿易' },
+  { year: '1964', text: '代理 BONLAC 奶粉及荷蘭白美娜濃縮奶水' },
+  { year: '1989', text: '代理美國月光牌泡打粉，佔台灣九成市場' },
+  { year: '1999', text: '於上海設立食品工廠' },
+  { year: '2000', text: '遷址至台北天母，推展自創品牌國際化' },
+];
+---
+<BaseLayout title="關於萬記 — 萬記貿易有限公司" description="萬記貿易由李曼英先生於 1960 年創立，前身為迪化街惠融行，半世紀深耕食品原料。">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="hero-badge">ABOUT WANCHEE</span>
+      <h1>關於萬記</h1>
+      <p>每個企業都有自己的根。萬記貿易由老董事長李曼英先生於 1960 年創立，前身為迪化街專營南北貨與進口食品罐頭的「惠融行」，至今已在食品業界扮演舉足輕重的角色。</p>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">經營理念</span>
+        <h2 class="title">以人為本</h2>
+        <p class="lead">尊重、創新、價值。萬記以誠信殷實的態度，為烘焙與食品加工業者提供安全、穩定的優質原料。</p>
+        <ul>
+          <li>經營理念：以人為本 — 尊重、創新、價值</li>
+          <li>2000 年起於上海設立科技化食品工廠，技轉合作研發</li>
+          <li>持續開拓大陸、日本、澳洲等海外市場</li>
+        </ul>
+      </div>
+      <div class="timeline">
+        {timeline.map((t) => <div><b>{t.year}</b>{t.text}</div>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2 class="title">想了解更多產品？</h2>
+      <a href="/products" class="btn btn-light" style="background:var(--red);color:#fff">瀏覽產品系列</a>
+    </div>
+  </section>
+</BaseLayout>

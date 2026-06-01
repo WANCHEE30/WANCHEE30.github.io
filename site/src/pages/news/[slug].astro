@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { news } from '../../data/news.js';
+
+export function getStaticPaths() {
+  return news.map((n) => ({ params: { slug: n.slug }, props: { item: n } }));
+}
+
+const { item } = Astro.props;
+---
+<BaseLayout title={`${item.title}｜最新消息 — 萬記貿易`} description={item.summary}>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="news-date" style="color:var(--gold)">{item.date}</span>
+      <h1 style="margin-top:8px">{item.title}</h1>
+    </div>
+  </section>
+
+  <section class="news-detail">
+    <div class="wrap">
+      <p class="crumbs"><a href="/news">最新消息</a> ／ {item.date}</p>
+      <p class="news-intro">{item.intro}</p>
+
+      {item.link && (
+        <p style="margin:20px 0">
+          <a href={item.link.href} class="btn btn-light" style="background:var(--red);color:#fff">{item.link.label} →</a>
+        </p>
+      )}
+
+      {item.articles && item.articles.map((a) => (
+        <div class="article">
+          <h2>{a.title}</h2>
+          <p class="article-source">{a.source}</p>
+          <div class="scans">
+            {a.images.map((src, i) => (
+              <img src={src} alt={`${a.title} 第 ${i + 1} 頁`} loading="lazy" />
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <div class="detail-cta">
+        <a href="/news" class="btn btn-ghost" style="border-color:var(--line);color:var(--ink)">← 回最新消息</a>
+        <a href="/contact" class="btn btn-light" style="background:var(--red);color:#fff">詢價洽詢</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

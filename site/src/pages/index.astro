@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProductCard from '../components/ProductCard.astro';
+import { products } from '../data/products.js';
+
+const featured = products.slice(0, 3);
+---
+<BaseLayout title="萬記貿易有限公司 — 半世紀食品原料專業">
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="wrap">
+      <div>
+        <span class="hero-badge">無鋁配方 · 不含硫酸鋁鉀</span>
+        <h1>半世紀的食品原料專業<br><em>月光牌無鋁泡打粉</em></h1>
+        <p>萬記貿易自 1960 年深耕食品業，代理牛老大奶粉、月光牌泡打粉與白美娜濃縮鮮乳，以誠信殷實為烘焙與食品加工提供安全、穩定的優質原料。</p>
+        <div class="btn-row">
+          <a href="/products" class="btn btn-light">瀏覽產品</a>
+          <a href="/contact" class="btn btn-ghost">聯絡業務</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="/images/banner04.png" alt="月光牌無鋁泡打粉" />
+        <div class="cap">全球穩定性最高的無鋁泡打粉 — 與全球最大食品集團 <b>KERRY</b> 合作出品。</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="wrap">
+      <div class="stat"><b>65+</b><span>年食品業經驗</span></div>
+      <div class="stat"><b>1960</b><span>創立於台北迪化街</span></div>
+      <div class="stat"><b>6</b><span>大產品系列</span></div>
+      <div class="stat"><b>90%</b><span>泡打粉市佔（巔峰期）</span></div>
+    </div>
+  </div>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products">
+    <div class="wrap">
+      <span class="eyebrow">OUR PRODUCTS</span>
+      <h2 class="title">精選產品</h2>
+      <p class="lead">奶粉、乳清、泡打粉與濃縮鮮乳，供烘焙、飲品與食品加工專業選用。</p>
+      <div class="grid">
+        {featured.map((p) => <ProductCard {...p} />)}
+      </div>
+      <p style="margin-top:32px"><a href="/products" class="btn btn-light" style="background:var(--red);color:#fff">查看全部產品系列 →</a></p>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="eyebrow">CONTACT US</span>
+      <h2 class="title">需要產品報價或樣品？</h2>
+      <p class="lead" style="text-align:center">產品報價、樣品索取與經銷合作，歡迎直接與我們聯繫。</p>
+      <a href="/contact" class="btn btn-light" style="background:var(--red);color:#fff">前往聯絡我們</a>
+    </div>
+  </section>
+</BaseLayout>

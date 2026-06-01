@@ -1,0 +1,51 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DealerList from '../components/DealerList.astro';
+import { regions, totalDealers } from '../data/distributors.js';
+---
+<BaseLayout title="經銷據點 — 萬記貿易有限公司" description={`萬記貿易全台經銷客戶：北部、新竹桃園、中部、南部、東部共 ${totalDealers} 家經銷夥伴，提供配送與門市銷售服務。`}>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="hero-badge">DISTRIBUTION</span>
+      <h1>全台經銷據點</h1>
+      <p>北部、新竹桃園、中部、南部、東部共 {totalDealers} 家經銷夥伴，提供配送與門市銷售服務。選擇地區、或直接搜尋店名查詢鄰近經銷商。</p>
+    </div>
+  </section>
+
+  <section class="dist">
+    <div class="wrap">
+      {/* 隱藏 radio 控制項，需排在 .dist-main 之前供 CSS 同層選取 */}
+      {regions.map((r, i) => (
+        <input class="region-radio" type="radio" name="region" id={`r-${r.key}`} checked={i === 0} />
+      ))}
+
+      <div class="dist-main">
+        <div class="dist-tabs" role="tablist">
+          {regions.map((r) => (
+            <label class="dist-tab" data-r={r.key} for={`r-${r.key}`}>
+              {r.name}<small>{r.dealers.length}</small>
+            </label>
+          ))}
+        </div>
+
+        {regions.map((r) => (
+          <div class="region-panel" data-r={r.key}>
+            <p class="region-sub">{r.subtitle}</p>
+            <DealerList dealers={r.dealers} placeholder={`在「${r.name}」搜尋店名、地址或電話…`} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2 class="title">找不到鄰近的經銷商？</h2>
+      <p class="lead" style="text-align:center">想線上選購可看推薦店家（提供官網的經銷夥伴），或直接與我們聯繫媒合最近的據點。</p>
+      <div class="btn-row" style="justify-content:center">
+        <a href="/recommendations" class="btn btn-light" style="background:var(--red);color:#fff">推薦店家</a>
+        <a href="/contact" class="btn btn-ghost" style="border-color:var(--line);color:var(--ink)">聯絡我們查詢</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

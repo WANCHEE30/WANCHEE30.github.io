@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { news } from '../data/news.js';
+---
+<BaseLayout title="最新消息 — 萬記貿易有限公司" description="萬記貿易最新消息：月光牌無鋁泡打粉上市、品質實驗報告與公司動態。">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="hero-badge">LATEST NEWS</span>
+      <h1>最新消息</h1>
+      <p>公司動態、產品上市與品質實驗報告。</p>
+    </div>
+  </section>
+
+  <section class="news">
+    <div class="wrap">
+      <div class="news-list" style="margin-top:0">
+        {news.map((n) => (
+          <a class="news-item" href={`/news/${n.slug}`}>
+            <span class="news-date">{n.date}</span>
+            <div>
+              <h3>{n.title}</h3>
+              <p>{n.summary}</p>
+              <span class="card-more">閱讀全文 →</span>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</BaseLayout>

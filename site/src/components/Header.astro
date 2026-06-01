@@ -1,0 +1,30 @@
+---
+const links = [
+  { href: '/about', label: '關於萬記' },
+  { href: '/products', label: '產品系列' },
+  { href: '/news', label: '最新消息' },
+  { href: '/distribution', label: '經銷據點' },
+  { href: '/recommendations', label: '推薦店家' },
+  { href: '/contact', label: '聯絡我們' },
+];
+// normalise current path so /about and /about/ both match
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+<header>
+  <nav class="wrap nav">
+    <a class="brand" href="/">
+      <img class="logo-img" src="/images/logo-w.png" width="51" height="33" alt="" />
+      <span>萬記貿易<small>WANCHEE TAIWAN</small></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" />
+    <ul class="menu">
+      {links.map((l) => (
+        <li>
+          <a href={l.href} aria-current={path === l.href ? 'page' : undefined}>{l.label}</a>
+        </li>
+      ))}
+    </ul>
+    <a href="/contact" class="nav-cta">詢價洽詢</a>
+    <label class="burger" for="nav-toggle"><span></span><span></span><span></span></label>
+  </nav>
+</header>

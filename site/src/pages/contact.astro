@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const info = [
+  { k: '公司', v: '萬記貿易有限公司' },
+  { k: '電話', v: '02-2874-3363' },
+  { k: '傳真', v: '02-2873-5510' },
+  { k: 'Email', v: 'abigail@wanchee.com.tw' },
+  { k: '營業時間', v: '09:00 – 17:00（週六、日及國定假日休）' },
+  { k: '地址', v: '台北市天母地區' },
+];
+---
+<BaseLayout title="聯絡我們 — 萬記貿易有限公司" description="萬記貿易聯絡資訊：電話 02-2874-3363、Email abigail@wanchee.com.tw。產品報價、樣品索取與經銷合作歡迎來信。">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="hero-badge">CONTACT US</span>
+      <h1>聯絡我們</h1>
+      <p>產品報價、樣品索取與經銷合作，請直接與我們聯繫。</p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">聯絡資訊</span>
+        <h2 class="title">公司資料</h2>
+        {info.map((row) => (
+          <div class="info-row"><span class="k">{row.k}</span><span>{row.v}</span></div>
+        ))}
+      </div>
+      <div>
+        <div class="reach">
+          <h3>歡迎來信洽詢</h3>
+          <p>產品報價、樣品索取與經銷合作，請直接與我們聯繫。</p>
+          <a class="btn-mail" href="mailto:abigail@wanchee.com.tw">✉ abigail@wanchee.com.tw</a>
+          <p style="margin-top:18px">或來電 <a href="tel:+886228743363" style="color:#fff;font-weight:700">02-2874-3363</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

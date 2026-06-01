@@ -1,0 +1,16 @@
+{
+  "name": "wanchee-site",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check:links": "node scripts/check-links.mjs dist",
+    "deploy": "astro build && npx --yes wrangler pages deploy dist --project-name=wanchee-site"
+  },
+  "dependencies": {
+    "astro": "^5.0.0"
+  }
+}

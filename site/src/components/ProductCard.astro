@@ -1,0 +1,14 @@
+---
+const { slug, img, imgAlt, topClass, tag, tagClass, name, desc } = Astro.props;
+---
+<a class="card" href={`/products/${slug}`}>
+  <div class={`card-top ${topClass}`}>
+    <img src={img} alt={imgAlt} loading="lazy" />
+  </div>
+  <div class="card-body">
+    <span class={`tag ${tagClass}`}>{tag}</span>
+    <h3>{name}</h3>
+    <p>{desc}</p>
+    <span class="card-more">查看詳情 →</span>
+  </div>
+</a>

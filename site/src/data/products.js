@@ -1,0 +1,81 @@
+// 產品資料，首頁、產品列表頁與產品內頁共用。
+// 文案取自 wanchee.com.tw 原站 product_01~06.htm（產品介紹 + 建議用途）。
+// img 為品牌商標圖（取自 original/），以 object-fit:contain 置於漸層底色上。
+export const products = [
+  {
+    slug: 'full-cream-milk-powder',
+    img: '/images/cowhand.png',
+    imgAlt: '牛老大 Cowhand 品牌商標',
+    topClass: 'c-milk',
+    tag: '牛老大系列',
+    tagClass: 'tag-r',
+    name: '特級全脂奶粉',
+    desc: '新鮮無汙染全脂生乳低溫殺菌噴霧乾燥，不添加任何添加物，適用於還原奶、優格、冰淇淋與烘焙配料。',
+    intro: '由新鮮無汙染的全脂生乳低溫殺菌（巴氏殺菌）後，噴霧乾燥而成的產品，採用最先進的尖端科技生產設備生產，不添加任何添加物，成份精準純正，品質穩定性特高。不含抗生素、農藥及輻射污染，品質管制最嚴苛，是世界上最衛生、最安全的超特級鮮奶粉。',
+    uses: '具備還原專用規格全脂鮮奶粉，適用於還原奶、超高溫滅菌奶、奶水、醱酵奶、優格、冰淇淋（粉）、糖果、巧克力、罐（盒）裝咖啡及奶茶等；也能廣泛應用於烘焙食品、營養性食品及其他各種乾混食品，做為配料用。',
+  },
+  {
+    slug: 'medium-fat-milk-powder',
+    img: '/images/cowhand.png',
+    imgAlt: '牛老大 Cowhand 品牌商標',
+    topClass: 'c-milk',
+    tag: '牛老大系列',
+    tagClass: 'tag-r',
+    name: '中脂奶粉',
+    desc: '溶解性極佳，富含磷脂、低乳脂、低鹽、高蛋白，可取代全脂奶粉以降低製造成本。',
+    intro: '經低溫殺菌後，噴霧乾燥而成的產品，溶解性極佳，富含磷脂（phospholipid）、低乳脂、低鹽、高蛋白質，不含抗生素、農藥及輻射污染，品質管制最嚴苛，是世界上最衛生、最安全的超特級奶粉。',
+    uses: '適用於煉乳、奶水、冰淇淋、巧克力、烘焙產品，可取代一般全脂奶粉，提高產品品質、降低製造成本。',
+  },
+  {
+    slug: 'skim-milk-powder',
+    img: '/images/cowhand.png',
+    imgAlt: '牛老大 Cowhand 品牌商標',
+    topClass: 'c-milk',
+    tag: '牛老大系列',
+    tagClass: 'tag-r',
+    name: '特級脫脂奶粉',
+    desc: '新鮮脫脂生乳製成，適合保久奶、煉乳、奶茶、罐裝咖啡及發酵乳製品。',
+    intro: '由新鮮無汙染的脫脂生乳低溫殺菌（巴氏殺菌）後，噴霧乾燥而成的產品，採用最先進的尖端科技生產設備生產，不添加任何添加物，成份精準純正，品質穩定性特高。不含抗生素、農藥及輻射污染，品質管制最嚴苛，是世界上最衛生、最安全的超特級奶粉。',
+    uses: '非常適合於保久奶、煉乳、奶茶、罐裝咖啡及發酵乳製品。',
+  },
+  {
+    slug: 'demineralized-whey-powder',
+    img: '/images/cowhand.png',
+    imgAlt: '牛老大 Cowhand 品牌商標',
+    topClass: 'c-cream',
+    tag: '乳製原料',
+    tagClass: 'tag-g',
+    name: '特級去礦乳清粉',
+    desc: '以電透析法萃取乳清鹽分與礦物質後濃縮噴乾，廣泛運用於巧克力、麵包及冰淇淋。',
+    intro: '乳清液是在乳酪製作下的一種稀釋的液體副產品，含有乳糖、蛋白質和礦物質。可利用電透析法萃取出其鹽分和礦物質，濃縮噴乾製成粉末。',
+    uses: '特別適用於巧克力、麵包及冰淇淋，廣泛運用於食品加工，可作為奶粉替代品。',
+  },
+  {
+    slug: 'aluminum-free-baking-powder',
+    img: '/images/crescent-baking.png',
+    imgAlt: '月光牌無鋁配方泡打粉 Crescent Baking Powder',
+    topClass: 'c-powder',
+    tag: '月光牌',
+    tagClass: 'tag-r',
+    name: '無鋁配方泡打粉',
+    desc: '與全球最大食品集團 KERRY 合作，雙重發酵、穩定度第一，適用蛋糕麵包、發糕饅頭與油炸粿粉。',
+    intro: '全球穩定性最高的無鋁配方——月光牌泡打粉，與全球最大食品集團 KERRY 公司合作，推出品質優良、安全健康，符合國際最高標準的食品專用泡打粉。本產品可使蛋白打發快，挺立持久穩定、色澤自然，烘焙成品外形飽滿、組織細膩、彈性好、口感極佳，具雙重發酵效果，是目前市面上效果與穩定度第一品牌的代名詞。',
+    uses: '特別適用於烘焙蛋糕麵包餅乾類、中式發糕饅頭蒸品類、油炸粿粉類。',
+  },
+  {
+    slug: 'condensed-fresh-milk',
+    img: '/images/pamina.png',
+    imgAlt: '白美娜 PAMINA 濃縮鮮乳',
+    topClass: 'c-cream',
+    tag: '白美娜',
+    tagClass: 'tag-g',
+    name: '濃縮鮮乳',
+    desc: '德國原裝進口、100% 生乳濃縮非乳粉還原，可常溫保存，提升加工產品風味並降低成本。',
+    intro: '由德國原裝進口，是目前市面上唯一百分之一百生乳濃縮之濃縮乳，絕非乳粉還原、無添加劑，體積小可常溫保存。在食品加工或調味上可有效提升產品風味與品質又可降低成本，可取代市售鮮奶、保久乳、奶水、調製奶水、多倍奶、奶粉、鮮奶油等，加入一定水量即成為營養豐富、有益健康的最優質鮮乳。',
+    uses: '適合於烘焙糕點、蛋塔、冰品、布丁、奶酪、各式果汁牛奶、沖調咖啡、奶茶、素食產品。',
+  },
+];
+
+export function getProduct(slug) {
+  return products.find((p) => p.slug === slug);
+}

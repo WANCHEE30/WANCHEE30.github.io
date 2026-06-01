@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import DealerList from '../components/DealerList.astro';
+import { keyCustomers, bakingStudios } from '../data/recommendations.js';
+
+// 推薦店家分兩類：指標客戶（f1.htm）與烘焙教室（f2.htm）
+const cats = [
+  {
+    key: 'key',
+    name: '指標客戶',
+    desc: '與萬記長期合作的知名食品與連鎖烘焙品牌，點選即可前往品牌官網。',
+    dealers: keyCustomers,
+    placeholder: '搜尋指標客戶…',
+  },
+  {
+    key: 'studio',
+    name: '烘焙教室',
+    desc: '提供烘焙 DIY 教學與材料的合作教室，歡迎就近報名體驗。',
+    dealers: bakingStudios,
+    placeholder: '搜尋烘焙教室、地址或電話…',
+  },
+];
+---
+<BaseLayout title="推薦店家 — 萬記貿易有限公司" description="萬記推薦店家：指標客戶（義美、鼎泰豐、一之軒等知名品牌）與烘焙教室（烘焙 DIY 教學合作店家）。">
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="hero-badge">RECOMMENDED</span>
+      <h1>推薦店家</h1>
+      <p>與萬記合作的指標客戶與烘焙教室。選擇分類、或直接搜尋店名查詢。</p>
+    </div>
+  </section>
+
+  <section class="dist">
+    <div class="wrap">
+      {cats.map((c, i) => (
+        <input class="region-radio" type="radio" name="reco" id={`rc-${c.key}`} checked={i === 0} />
+      ))}
+
+      <div class="dist-main">
+        <div class="dist-tabs" role="tablist">
+          {cats.map((c) => (
+            <label class="dist-tab" data-r={c.key} for={`rc-${c.key}`}>
+              {c.name}<small>{c.dealers.length}</small>
+            </label>
+          ))}
+        </div>
+
+        {cats.map((c) => (
+          <div class="region-panel" data-r={c.key}>
+            <p class="region-sub">{c.desc}</p>
+            <DealerList dealers={c.dealers} placeholder={c.placeholder} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <h2 class="title">想找鄰近的實體經銷商？</h2>
+      <p class="lead" style="text-align:center">查看全台 5 大地區共 112 家經銷據點，或直接與我們聯繫。</p>
+      <div class="btn-row" style="justify-content:center">
+        <a href="/distribution" class="btn btn-light" style="background:var(--red);color:#fff">全台經銷據點</a>
+        <a href="/contact" class="btn btn-ghost" style="border-color:var(--line);color:var(--ink)">聯絡我們</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

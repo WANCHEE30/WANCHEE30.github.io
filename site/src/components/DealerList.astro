@@ -1,0 +1,41 @@
+---
+import DealerCard from './DealerCard.astro';
+// 可重用的經銷商列表：響應式卡片 + 即時搜尋 filter。
+// 用於經銷據點各地區，也可用於推薦店家等任何店家清單。
+const { dealers = [], searchable = true, placeholder = '搜尋店名、地址或電話…' } = Astro.props;
+---
+<div class="dealer-list">
+  {searchable && (
+    <div class="dealer-toolbar">
+      <input class="dealer-search" type="search" placeholder={placeholder} aria-label="搜尋經銷商" />
+      <span class="dealer-result">共 <b class="dealer-count">{dealers.length}</b> 家</span>
+    </div>
+  )}
+  <div class="dealer-grid">
+    {dealers.map((d) => <DealerCard {...d} />)}
+  </div>
+  <p class="dealer-empty" hidden>查無符合條件的店家，請換個關鍵字。</p>
+</div>
+
+<script>
+  // 對每個 .dealer-list 綁定搜尋過濾（多個實例皆適用，腳本只載入一次）
+  document.querySelectorAll('.dealer-list').forEach((list) => {
+    const input = list.querySelector('.dealer-search');
+    if (!input) return;
+    const cards = Array.from(list.querySelectorAll('.dealer-card'));
+    const count = list.querySelector('.dealer-count');
+    const empty = list.querySelector('.dealer-empty');
+    const apply = () => {
+      const q = input.value.trim().toLowerCase();
+      let n = 0;
+      cards.forEach((c) => {
+        const match = !q || (c.dataset.search || '').includes(q);
+        c.classList.toggle('is-hidden', !match);
+        if (match) n++;
+      });
+      if (count) count.textContent = String(n);
+      if (empty) empty.hidden = n !== 0;
+    };
+    input.addEventListener('input', apply);
+  });
+</script>
