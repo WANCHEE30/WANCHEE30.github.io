@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers 靜態資產設定：直接服務 Astro build 出來的 dist/
+  // 純靜態網站，不需要 Worker 程式碼，只用 assets。
+  "name": "wanchee-site",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./dist"
+  }
+}
