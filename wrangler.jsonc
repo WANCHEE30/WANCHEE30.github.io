@@ -1,0 +1,9 @@
+{
+  // Cloudflare Workers Builds 從 repo 根目錄執行 deploy，讀取此設定。
+  // Astro build 產物在 site/dist/，純靜態網站只用 assets、不需 Worker 程式碼。
+  "name": "wanchee-site",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./site/dist"
+  }
+}

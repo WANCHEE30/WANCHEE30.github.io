@@ -1,0 +1,9 @@
+{
+  "name": "wanchee-site-root",
+  "private": true,
+  "type": "module",
+  "//": "Astro 專案在 site/ 子目錄。此根 package.json 讓 Cloudflare Workers Builds 用預設根目錄即可 build。",
+  "scripts": {
+    "build": "npm --prefix site install && npm --prefix site run build"
+  }
+}
