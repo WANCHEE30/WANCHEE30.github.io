@@ -157,74 +157,6 @@ header{
 .news-detail .scans{display:grid;gap:18px}
 .news-detail .scans img{width:100%;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow)}
 
-/* ---- distribution ---- */
-.region-radio{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
-.dist-main{margin-top:8px}
-
-/* region tabs */
-.dist-tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
-.dist-tab{display:inline-flex;align-items:center;gap:7px;padding:10px 18px;border-radius:999px;border:1px solid var(--line);font-weight:700;font-size:15px;cursor:pointer;transition:.15s;background:#fff}
-.dist-tab small{font-size:12px;font-weight:800;background:var(--cream);color:var(--muted);padding:1px 8px;border-radius:999px}
-.dist-tab:hover{border-color:var(--red)}
-.region-sub{color:var(--muted);font-size:14px;margin-bottom:16px}
-
-/* region show/hide + active tab (per key) */
-.region-panel{display:none}
-#r-north:checked   ~ .dist-main .region-panel[data-r="north"],
-#r-hsinchu:checked ~ .dist-main .region-panel[data-r="hsinchu"],
-#r-central:checked ~ .dist-main .region-panel[data-r="central"],
-#r-south:checked   ~ .dist-main .region-panel[data-r="south"],
-#r-east:checked    ~ .dist-main .region-panel[data-r="east"]{display:block}
-#r-north:checked   ~ .dist-main .dist-tab[data-r="north"],
-#r-hsinchu:checked ~ .dist-main .dist-tab[data-r="hsinchu"],
-#r-central:checked ~ .dist-main .dist-tab[data-r="central"],
-#r-south:checked   ~ .dist-main .dist-tab[data-r="south"],
-#r-east:checked    ~ .dist-main .dist-tab[data-r="east"]{background:var(--red);color:#fff;border-color:var(--red)}
-#r-north:checked   ~ .dist-main .dist-tab[data-r="north"] small,
-#r-hsinchu:checked ~ .dist-main .dist-tab[data-r="hsinchu"] small,
-#r-central:checked ~ .dist-main .dist-tab[data-r="central"] small,
-#r-south:checked   ~ .dist-main .dist-tab[data-r="south"] small,
-#r-east:checked    ~ .dist-main .dist-tab[data-r="east"] small{background:rgba(255,255,255,.25);color:#fff}
-
-/* 推薦店家分類分頁（指標客戶 / 烘焙教室） */
-#rc-key:checked    ~ .dist-main .region-panel[data-r="key"],
-#rc-studio:checked ~ .dist-main .region-panel[data-r="studio"]{display:block}
-#rc-key:checked    ~ .dist-main .dist-tab[data-r="key"],
-#rc-studio:checked ~ .dist-main .dist-tab[data-r="studio"]{background:var(--red);color:#fff;border-color:var(--red)}
-#rc-key:checked    ~ .dist-main .dist-tab[data-r="key"] small,
-#rc-studio:checked ~ .dist-main .dist-tab[data-r="studio"] small{background:rgba(255,255,255,.25);color:#fff}
-
-/* ---- dealer list (reusable: 經銷據點 / 推薦店家) ---- */
-.dealer-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:16px}
-.dealer-search{flex:1;min-width:220px;max-width:420px;padding:11px 16px;border:1px solid var(--line);border-radius:999px;font:inherit;font-size:15px;background:#fff}
-.dealer-search:focus{outline:none;border-color:var(--red);box-shadow:0 0 0 3px rgba(177,30,47,.1)}
-.dealer-result{color:var(--muted);font-size:14px;white-space:nowrap}
-.dealer-result b{color:var(--red);font-family:Georgia,serif;font-size:16px}
-.dealer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-.dealer-empty{color:var(--muted);text-align:center;padding:32px;border:1px dashed var(--line);border-radius:12px;margin-top:4px}
-
-.dealer-card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 20px;transition:.15s;display:flex;flex-direction:column;gap:8px}
-.dealer-card:hover{border-color:var(--red);box-shadow:var(--shadow)}
-.dealer-card.is-hidden{display:none}
-.dealer-head{display:flex;align-items:flex-start;justify-content:space-between;gap:10px}
-.dealer-name{font-weight:800;font-size:16px;color:var(--ink)}
-a.dealer-name.is-link{display:inline-flex;align-items:center;gap:4px;color:var(--red)}
-a.dealer-name.is-link span{text-decoration:underline;text-decoration-color:rgba(177,30,47,.3);text-underline-offset:3px}
-a.dealer-name.is-link:hover span{text-decoration-color:var(--red)}
-.ext-icon{flex-shrink:0;opacity:.85}
-a.dealer-name.is-link:hover .ext-icon{opacity:1}
-.dealer-badges{display:flex;gap:5px;flex-wrap:wrap;flex-shrink:0}
-.badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:5px;white-space:nowrap}
-.b-delivery{background:#fde0e3;color:var(--red)}
-.b-store{background:#e7f0d8;color:#5d7a2c}
-.b-web{background:#e6eefc;color:#2c5dab}
-.dealer-addr{color:var(--muted);font-size:13.5px;line-height:1.6}
-.dealer-phone{color:var(--ink);font-size:14px;font-weight:600}
-a.dealer-phone:hover{color:var(--red)}
-
-@media(max-width:980px){.dealer-grid{grid-template-columns:repeat(2,1fr)}}
-@media(max-width:600px){.dealer-grid{grid-template-columns:1fr}}
-
 /* ---- contact ---- */
 .contact{background:var(--ink);color:#fff}
 .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px}
@@ -266,10 +198,10 @@ footer a:hover{color:#fff}
   .menu a{display:block;padding:16px 24px}
   #nav-toggle:checked ~ .menu{max-height:420px}
   .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:32px}
-  .grid,.region-grid{grid-template-columns:1fr 1fr}
+  .grid{grid-template-columns:1fr 1fr}
   .news-item{grid-template-columns:1fr;gap:6px}
 }
 @media(max-width:520px){
-  .grid,.region-grid{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr}
   .stat b{font-size:30px}
 }

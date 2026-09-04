@@ -18,7 +18,7 @@ wanchee-site/
     │   ├── layouts/BaseLayout.astro   共用 <head> + Header + Footer
     │   ├── components/                Header / Footer / ProductCard
     │   ├── data/products.js           產品資料（首頁與產品頁共用）
-    │   ├── pages/                     index / about / products / news / distribution / contact
+    │   ├── pages/                     index / about / products / news / contact
     │   └── styles/global.css          全站樣式（沿用 mockup 設計）
     ├── public/images/                 banner / logo 圖片
     └── scripts/check-links.mjs        內部連結檢查器
@@ -26,7 +26,7 @@ wanchee-site/
 
 ## 正式網站（site/）
 
-Astro 元件化多頁靜態網站，6 頁：首頁、關於萬記、產品系列、最新消息、經銷據點、聯絡我們。
+Astro 元件化多頁靜態網站，5 頁：首頁、關於萬記、產品系列、最新消息、聯絡我們。
 聯絡採 `mailto:` + 電話，無後端。
 
 ```bash
@@ -74,7 +74,6 @@ npx serve .
 ## 待辦（改版正式版）
 
 - [ ] 圖片內文字 OCR / 重新打成真 HTML 文字
-- [ ] 經銷據點表格資料化
 - [ ] 聯絡表單串接後端或表單服務
 - [ ] 改用 Astro / 11ty 等靜態框架產生多頁
 - [ ] SEO、OG tags、favicon
